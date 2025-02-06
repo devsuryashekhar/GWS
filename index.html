@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghosh Institute</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">Ghosh Institute</div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <span class="menu-toggle" onclick="toggleNavbar()">&#9776;</span> <!-- Hamburger Icon -->
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Ghosh Institute</h2>
+        <p>Expert Science & Mathematics Tuition</p>
+        <a href="#courses" class="btn primary-btn">Explore More</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About the Tutor</h2>
+        <section id="nothing" class="nothing">
+            <h1>Mr. Sudip Ghosh</h1>
+        </section>
+        <img src="assets/images/tutor2.jpg" alt="Tutor" class="tutor-image">
+        <p>Sudip Ghosh has 5 years of experience as a school teacher in teaching <br> Science & Mathematics. Real-world examples, and interactive <br> learning techniques. He is such a <br> highly qualified teacher with <b> M.SC in (Physics), B.ED</b></p>
+        <div class="features">
+            <div class="feature"><i class="fas fa-user-tie"></i> <h3>Expert tutor</h3></div>
+            <div class="feature"><i class="fas fa-book"></i> <h3>Science & Mathematics</h3></div>
+            <div class="feature"><i class="fas fa-lightbulb"></i> <h3>Concept Clarity</h3></div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Subjects We Teach</h2>
+        <div class="course-list">
+            <div class="course"><i class="fas fa-calculator"></i> <h3>Mathematics</h3> <p>Problem-solving, reasoning, and exam preparation.</p></div>
+            <div class="course"><i class="fas fa-flask"></i> <h3>Science</h3> <p>Physics, Chemistry, & Biology.</p></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial">
+            <p>Best tuition ever! My grades improved dramatically.</p>
+            <h4>- Suryashekhar</h4>
+        </div>
+        <div class="testimonial">
+            <p>Concept clarity is amazing! Highly recommended.</p>
+            <h4>- Sayantan</h4>
+        </div>
+        <div class="testimonial">
+            <p>Best tuitions I have ever seen in my life, the behaviour towards the students is also so good!!</p>
+            <h4>- Aditya</h4>
+        </div>
+        <div class="testimonial">
+            <p>He is very experienced & knowledgeable. He keeps his lessons effective, engaging & fun.</p>
+            <h4>- Swagato</h4>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+        
+        <section id="class" class="class">
+        <p><strong>Find Us Here:</strong></p></section>
+
+        <!-- Contact Icons -->
+        <div class="contact-info">
+            <a href="tel:+918597471353" class="contact-icon phone" title="Call Now"><i class="fas fa-phone-alt"></i></a>
+            <a href="https://wa.me/918597471353" target="_blank" class="contact-icon whatsapp" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:ghoshsudip80667@gmail.com" class="contact-icon email" title="Send Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://maps.app.goo.gl/8tKXJyYsWTvBYGwMA?g_st=ac" target="_blank" class="contact-icon maps" title="View on Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p> © 2025 Ghosh Institute. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+    <script>
+        function toggleNavbar() {
+            const navList = document.querySelector('.navbar');
+            navList.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
